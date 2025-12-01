@@ -375,7 +375,7 @@
 <!-- End Chat JS -->
 <!-- Map JS -->
 <script type="text/javascript"
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC808NpIO-MZ_C-nXv21zGFDKC1OUm_MkQ"></script>
+    src="https://maps.googleapis.com/maps/api/js?key="></script>
 <script src="{{ asset('asset/package/js/jquery.googlemap.js') }}"></script>
 
 <script type="text/javascript">
