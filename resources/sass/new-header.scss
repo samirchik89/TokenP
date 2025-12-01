@@ -1,0 +1,107 @@
+// .new-header {
+//   height: 80px;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   width: 100%;
+//   background-color: #fff;
+//   display: flex;
+//   align-items: center;
+//   transition: all 0.2s ease-in-out;
+//   z-index: 999;
+
+//   .container-fluid {
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     padding: 0 !important;
+//     margin: 0 !important;
+//   }
+
+//   .logo-wrapper {
+//     width: 230px;
+//     background: #fff;
+//     padding: 16px;
+//     height: 80px;
+//     @media screen and (max-width: 992px) {
+//       width: auto;
+//       background: transparent;
+//     }
+//     img {
+//       width: 120px;
+//       height: auto;
+//       object-fit: cover;
+//     }
+//   }
+//   .inner-header {
+//     padding: 16px;
+
+//     width: calc(100% - 230px);
+//     @media screen and (max-width: 992px) {
+//       width: fit-content;
+//       margin-left: auto;
+//     }
+//     .bar-icon {
+//       padding: 8px;
+//       width: fit-content;
+//       cursor: pointer;
+//       &.d-lg-block {
+//         display: none;
+//         @media screen and (min-width: 992px) {
+//           display: block;
+//         }
+//       }
+//       i {
+//         font-size: 20px;
+//         color: #000;
+//       }
+//     }
+//     .mob-bar-icon {
+//       padding: 8px;
+//       width: fit-content;
+//       cursor: pointer;
+//       &.d-lg-none {
+//         display: block;
+//         @media screen and (min-width: 992px) {
+//           display: none;
+//         }
+//       }
+//       i {
+//         font-size: 20px;
+//         color: #000;
+//       }
+//     }
+//   }
+// }
+
+
+.float-right {
+  float: right;
+}
+
+.profile-dropdown {
+  display: none !important;
+}
+.profile-dropdown.show {
+  display: flex !important;
+}
+.profile-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-box {
+	height: 70px;
+	width: 240px;
+	float: left;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box a {
+  width: 100%;
+}
+
+

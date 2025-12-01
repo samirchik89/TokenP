@@ -1,0 +1,255 @@
+/* Create Asset Parent Menu Highlight */
+.menu-item .menu-link.create-asset-highlight {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+    color: white !important;
+    border-radius: 8px !important;
+    margin: 2px 8px !important;
+    padding: 8px 12px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3) !important;
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    z-index: 10 !important;
+}
+
+/* More specific selector */
+#layout-menu .menu-item .menu-link.create-asset-highlight {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+    color: white !important;
+}
+
+/* Even more specific */
+body #layout-menu .menu-item .menu-link.create-asset-highlight {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+    color: white !important;
+}
+
+.menu-item .menu-link.create-asset-highlight:hover {
+    background: linear-gradient(135deg, #20c997 0%, #28a745 100%) !important;
+    color: white !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4) !important;
+    text-decoration: none !important;
+}
+
+.menu-item .menu-link.create-asset-highlight .menu-icon {
+    color: white !important;
+    font-size: 1.1em !important;
+    margin-right: 4px !important;
+}
+
+.menu-item .menu-link.create-asset-highlight div {
+    color: white !important;
+    font-weight: 600 !important;
+    margin: 0 !important;
+}
+
+/* Ensure the highlight works in both light and dark themes */
+[data-bs-theme="dark"] .menu-item .menu-link.create-asset-highlight {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+    color: white !important;
+}
+
+[data-bs-theme="dark"] .menu-item .menu-link.create-asset-highlight:hover {
+    background: linear-gradient(135deg, #20c997 0%, #28a745 100%) !important;
+    color: white !important;
+}
+
+/* Override any conflicting menu styles for Create Asset */
+.menu-item .menu-link.create-asset-highlight:before,
+.menu-item .menu-link.create-asset-highlight:after {
+    display: none !important;
+}
+
+/* Ensure Create Asset highlight is visible even when menu is collapsed */
+.layout-menu-collapsed .menu-item .menu-link.create-asset-highlight {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+    color: white !important;
+}
+
+/* Override active state styles for Create Asset */
+.menu-item.active.open .menu-link.create-asset-highlight {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+    color: white !important;
+}
+
+.menu-item.active.open .menu-link.create-asset-highlight:hover {
+    background: linear-gradient(135deg, #20c997 0%, #28a745 100%) !important;
+    color: white !important;
+}
+
+/* Create Property Token Menu Highlight */
+.menu-item .menu-link.create-property-token-highlight {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+    border-radius: 8px !important;
+    margin: 2px 8px !important;
+    padding: 8px 12px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3) !important;
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    z-index: 10 !important;
+}
+
+.menu-item .menu-link.create-property-token-highlight:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%) !important;
+    color: white !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4) !important;
+    text-decoration: none !important;
+}
+
+.menu-item .menu-link.create-property-token-highlight .menu-icon {
+    color: white !important;
+    font-size: 1.1em !important;
+    margin-right: 4px !important;
+}
+
+.menu-item .menu-link.create-property-token-highlight div {
+    color: white !important;
+    font-weight: 600 !important;
+    margin: 0 !important;
+}
+
+/* Ensure the highlight works in both light and dark themes */
+[data-bs-theme="dark"] .menu-item .menu-link.create-property-token-highlight {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+}
+
+[data-bs-theme="dark"] .menu-item .menu-link.create-property-token-highlight:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%) !important;
+    color: white !important;
+}
+
+/* Override any conflicting menu styles */
+.menu-item .menu-link.create-property-token-highlight:before,
+.menu-item .menu-link.create-property-token-highlight:after {
+    display: none !important;
+}
+
+/* Ensure proper spacing for sub-menu items with icons */
+.menu-sub .menu-item .menu-link {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.menu-sub .menu-item .menu-link .menu-icon {
+    font-size: 1em !important;
+    margin-right: 4px !important;
+}
+
+/* Ensure the highlight is visible even when menu is collapsed */
+.layout-menu-collapsed .menu-item .menu-link.create-property-token-highlight {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+}
+
+/* Parent menu highlighting when sub-menu is active */
+.menu-item.active.open > .menu-link {
+    background-color: rgba(102, 126, 234, 0.1) !important;
+    color: #667eea !important;
+    border-radius: 6px !important;
+    margin: 2px 8px !important;
+    padding: 8px 12px !important;
+}
+
+.menu-item.active.open > .menu-link .menu-icon {
+    color: #667eea !important;
+}
+
+/* Ensure sub-menu is visible when parent is active */
+.menu-item.active.open .menu-sub {
+    display: block !important;
+}
+
+/*Profile page styles*/
+.next-step,.next-step1 {
+    background: #ffffff;
+	outline: 0 !important;
+}
+.form-control {
+    border: solid 1px #e8e8e8;
+    box-shadow: none;
+    height: 42px;
+    border-left: 1px solid #e8e8e8;
+}
+
+.btn-success.btn1 {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.btn-success.btn1:hover {
+    color: #fff;
+    background-color: #47a447;
+    border-color: #398439;
+}
+
+.btn-primary.btn1 {
+    color: #fff;
+    background-color: #070023;
+    border-radius: 3px;
+}
+.btn-primary.btn1:hover {
+    color: #fff;
+    background-color: #000;
+    border-radius: 3px;
+}
+
+
+
+.property-head.profileBanner {
+    padding: 16px;
+    background: url('../images/profileBan.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input[type="checkbox"]+label:before {
+
+    border: 1px solid #6ba1ff;
+}
+
+/* Menu Disabled State */
+.menu-disabled {
+    opacity: 0.5 !important;
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.menu-disabled:hover {
+    opacity: 0.5 !important;
+    text-decoration: none !important;
+}
+
+/* Ensure disabled state works in both light and dark themes */
+[data-bs-theme="dark"] .menu-disabled {
+    opacity: 0.5 !important;
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+}
+
+[data-bs-theme="dark"] .menu-disabled:hover {
+    opacity: 0.5 !important;
+    text-decoration: none !important;
+}
+
+/* Override any conflicting menu styles for disabled items */
+.menu-disabled:before,
+.menu-disabled:after {
+    opacity: 0.5 !important;
+}
+
+/* Ensure disabled state is visible even when menu is collapsed */
+.layout-menu-collapsed .menu-disabled {
+    opacity: 0.5 !important;
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+}

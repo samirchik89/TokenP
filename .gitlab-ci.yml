@@ -1,0 +1,53 @@
+stages:
+  - deploy
+
+.deploy_template: &deploy_template
+  stage: deploy
+  before_script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - echo "$SSH_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+  script:
+    - |
+      ssh $SSH_USER@$SSH_HOST << 'EOF'
+        cd /var/www/rwa
+        sudo su
+
+        echo "📥 Pulling latest code from branch $CI_COMMIT_REF_NAME"
+        git pull origin $CI_COMMIT_REF_NAME
+
+        echo "📦 Installing PHP dependencies"
+        composer install --no-interaction --prefer-dist --optimize-autoloader
+
+        echo "🛠️ Running Laravel commands"
+        php artisan migrate --force
+        php artisan config:cache
+        php artisan route:cache
+        php artisan view:cache
+
+        echo "♻️ Restarting PHP-FPM"
+        sudo systemctl restart php7.4-fpm
+
+        echo "✅ Deployment complete"
+
+      EOF
+
+deploy_staging:
+  <<: *deploy_template
+  only:
+    - staging
+  variables:
+    SSH_USER: $STAGING_SSH_USER
+    SSH_HOST: $STAGING_SSH_HOST
+    SSH_KEY: $STAGING_SSH_KEY
+
+deploy_prod:
+  <<: *deploy_template
+  only:
+    - main
+  variables:
+    SSH_USER: $PROD_SSH_USER
+    SSH_HOST: $PROD_SSH_HOST
+    SSH_KEY: $PROD_SSH_KEY

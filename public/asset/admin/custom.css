@@ -1,0 +1,153 @@
+body {
+    background-color: #bbc2ce !important;
+    font-family: 'Open Sans', sans-serif!important;
+}
+
+i{
+    padding-right: 5px;
+}
+
+/* Tiles */
+
+.tile {
+    position: relative;
+    overflow: hidden;
+    min-height: 150px;
+}
+
+.tile .t-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.tile h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+.tile h6 {
+    font-weight: normal;
+    color: #999;
+}
+
+.tile-1 .t-icon {
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.tile-1 .t-icon span {
+    position: absolute;
+    z-index: 8;
+    top: -60px;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+}
+
+.tile-1 .t-icon i {
+    position: relative;
+    z-index: 9;
+    font-size: 1.75rem;
+    color: #fff;
+}
+
+.tile-1 .t-icon.left {
+    left: 0;
+}
+
+.tile-1 .t-icon.left span {
+    left: -60px;
+}
+
+.tile-1 .t-icon.left i {
+    padding-right: 15px;
+}
+
+.tile-1 .t-icon.right {
+    right: 0;
+}
+
+.tile-1 .t-icon.right span {
+    right: -60px;
+}
+
+.tile-1 .t-icon.right i {
+    padding-left: 15px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.tile-1 {
+    min-height: 150px;
+}
+
+.tile-2 {
+    border: none !important;
+}
+
+.tile-2 h6 {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.tile-2 .t-icon i {
+    position: absolute;
+    z-index: 9;
+    bottom: -15px;
+    right: 10px;
+    font-size: 6rem;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.tile-2 .t-icon.left i {
+    left: 10px;
+}
+
+.tile-2 .t-icon.right i {
+    right: 10px;
+}
+
+.tile-3 .t-icon i {
+    position: absolute;
+    z-index: 9;
+    top: 20px;
+    line-height: 1;
+    font-size: 4rem;
+    color: #ddd;
+}
+
+.tile-3 .t-icon.left i {
+    left: 15px;
+}
+
+.tile-3 .t-icon.right i {
+    right: 15px;
+}
+
+.tile-4 .t-icon {
+    position: absolute;
+    z-index: 9;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    line-height: 65px;
+    background-color: #e8ebf0;
+    font-size: 2rem;
+    color: #818a91;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.tile-4 .t-icon.left {
+    left: 15px;
+}
+
+.tile-4 .t-icon.right {
+    right: 15px;
+}
+

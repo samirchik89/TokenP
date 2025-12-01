@@ -1,0 +1,30 @@
+.float-right {
+  float: right;
+}
+
+.profile-dropdown {
+  display: none !important;
+}
+
+.profile-dropdown.show {
+  display: flex !important;
+}
+
+.profile-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-box {
+  height: 70px;
+  width: 240px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-box a {
+  width: 100%;
+}
+
